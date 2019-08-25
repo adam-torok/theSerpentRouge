@@ -1,0 +1,117 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #130d0a;
+  font-family: 'Teko', sans-serif;
+  color: #fff;
+}
+#hero {
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+#content {
+  background-color: #130d0a;
+  padding: 0rem 3rem 0rem 3rem;
+}
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  position: fixed;
+  z-index: -1;
+}
+#hero-mobile {
+  display: none;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png") no-repeat center bottom / cover;
+  height: 320px;
+}
+.first-section {
+  padding: 50px 0 20px 0;
+}
+.text-header {
+  font-size: 50px;
+  text-align: center;
+}
+h1 {
+  line-height: 120%;
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+p {
+  color: white;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 150%;
+}
+#hero, .layer {
+  min-height: 800px;
+}
+.layer-bg {
+  background-image: url(bg-image.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.landing-content{
+
+}
+.layer-1 {
+  background-image: url(crows.png);
+  height: 100vh;
+  background-position: left ;
+}
+.layer-2 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png);
+}
+.layer-3 {
+  background-image: url(plauge.png
+		);
+  background-position: left bottom;
+}
+.layer-4 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png
+		);
+}
+.layer-overlay {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png
+		);
+@media only screen and (max-width: 768px) {
+  #hero {
+    display: none;
+  }
+  #hero-mobile {
+    display: block;
+  }
+
+}
+
+}
+section{
+  padding: 50px 0 20px 0;
+}
+i{
+  padding:20px;
+}
+i:hover{
+  color:red;
+}
+h1{
+  text-align: center;
+}
+.container{
+  display: grid;
+  grid-gap: 3rem;
+  padding:1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.img{
+  width: 100%;
+  height: auto;
+ 
+}
