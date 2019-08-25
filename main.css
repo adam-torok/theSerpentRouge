@@ -6,7 +6,7 @@ body {
   background-color: #fff;
 }
 #hero {
-  height: 800px;
+  height:  100vh;
   overflow: hidden;
   position: relative;
 }
@@ -50,7 +50,7 @@ p {
   min-height: 800px;
 }
 .layer-bg {
-  background-image: url(bg-image.jpg);
+  background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -135,9 +135,68 @@ hr{
 }
 .aw-cards{
   padding:1rem 2rem 1rem 2rem;
+  margin:1rem;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 1s cubic-bezier(.25,.8,.25,1);
+}
+.aw-cards:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform:scale(1.05);
+  color:#54C7E6!important;
 }
 mark{
   color:#54C7E6;
   background-color: transparent;
 
+}
+
+header {
+	position: fixed;
+	z-index: 40000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	top: 0;
+	background-color: #130D0A;
+  display: flex;
+  PADDING:1rem;
+	align-items: center;
+	justify-content: center;
+	transition: top 0.5s ease-in-out;
+	width: 100%;
+}
+
+.nav-up {
+	top: -200px;
+}
+
+
+.landing-content p {
+	text-align: center;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+a:hover {
+	color: #54C7E6;;
+	transition: 0.5s;
+}
+
+header nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+li a {
+	text-transform: uppercase;
+	padding-right: 2rem;
+	text-align: center;
 }
