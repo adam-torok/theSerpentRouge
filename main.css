@@ -91,11 +91,11 @@ h1{
 .news{
   grid-area: news;
   display: grid;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-2.jpg);
+  border-top: 3px solid white;
+  background: linear-gradient( rgba(46, 46, 46, 0.5), rgba(19, 13, 10, 1)), url(bg-image-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   padding: 1rem;
   box-sizing: border-box;
   margin-left: auto;
@@ -165,7 +165,7 @@ hr{
 }
 .awards{
   grid-area: awards;
-  padding: 1rem;
+  padding: 5rem;
     color: white;
     background-color: #130D0A;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-2.jpg);
@@ -180,7 +180,7 @@ hr{
     color: white;
 }
 .aw-cards{
-  padding:1rem 1rem 1rem 1rem;
+  padding:1rem;
   margin:1rem;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-attachment: fixed;
@@ -283,16 +283,14 @@ section.slogan{
 }
 section.about-us{
   grid-area:about-us;
+  border-bottom: 3px solid white;
   box-sizing: border-box;
   display: grid;
+  grid-gap: 3rem;
   grid-template-columns: 1fr 1fr;
-  background-color: #130D0A;
-  background-repeat: no-repeat;
+  background: linear-gradient( rgb(19, 13, 10), rgba(255, 255, 255, 0)), url(bg-image-2.jpg);
+  background-position: center;  
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-    
 }
 .about-us-left{
   position: relative; height: 600px;
@@ -312,8 +310,9 @@ section.form {
   height: 100vh;
   grid-area: form;
   display: grid;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-2.jpg);
-  text-align: left;
+  background: linear-gradient( rgb(19, 13, 10), rgba(255, 255, 255, 0)), url(bg-image-2.jpg);
+  background-position: center;  
+  background-size: cover;  text-align: left;
   grid-template-columns: 1fr 1fr;
   justify-content: start;
   z-index: 1;
@@ -397,6 +396,14 @@ section.gallery img:hover{
 
 .logo{
   width:200px;
+}
+hr.style13 {
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #3b91e2, #8c8b8b, #00e1ff);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
 }
 
 
