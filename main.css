@@ -284,11 +284,9 @@ section.slogan{
 section.about-us{
   grid-area:about-us;
   box-sizing: border-box;
-  padding:5rem 5rem 5rem 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #130D0A;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -297,10 +295,12 @@ section.about-us{
     
 }
 .about-us-left{
-  object-fit: cover;
-  text-align: center;
+  position: relative; height: 600px;
 }
-
+.about-us-img{
+  padding-top: 3rem;
+  position: absolute; bottom: 0;
+}
 .about-us-right{
   text-align:left!important;
   padding-right:5rem;
@@ -316,13 +316,24 @@ section.form {
   text-align: left;
   grid-template-columns: 1fr 1fr;
   justify-content: start;
+  z-index: 1;
   padding:0rem 2rem 0rem 2rem;
-  align-items: center;
 }
 .form input{
   width: 80%;
   padding-bottom: 3rem;
   padding: 1rem;
+}
+.form-image{
+  position: relative; height: 400;
+}
+.form-logo{
+  position: absolute; 
+  bottom: 0;
+  right: 0;  
+  padding-right: 5rem;
+  overflow-y: hidden;
+  height: 80%;
 }
 .button {
   background-color:#54C7E6;
@@ -338,12 +349,7 @@ section.form {
   display: inline-block;
   font-size: 16px;
 }
-.form-logo{
-  padding-left: 30%;
-  height: 90%;
-  vertical-align:bottom;
-   text-align:right;
-}
+
 div.gallery-holder {
   grid-area: gallery-holder;
   padding: 3rem;
@@ -356,7 +362,7 @@ div.gallery-holder {
 section.gallery {
   display: grid;
     grid-gap:1rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-evenly;
   justify-items: center;
   align-items: center;
@@ -364,8 +370,7 @@ section.gallery {
 section.gallery img {
   width: 100%;
   object-fit: cover;
-  filter: sepia(30);
-
+  filter: sepia(70%);
 }
 section.gallery img:hover{
   filter: none;
