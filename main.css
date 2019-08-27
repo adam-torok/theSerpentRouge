@@ -155,7 +155,6 @@ h1 {
 	margin-right: auto;
 	display: grid;
 	padding: 0rem 1rem 0rem 1rem;
-	grid-template-columns: repeat(3, 1fr);
 }
 
 .news-article-content {
@@ -237,7 +236,7 @@ mark {
 
 header {
 	position: fixed;
-	z-index: 40000;
+	z-index: 2;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	top: 0;
 	background-color: #130D0A;
@@ -395,7 +394,6 @@ section.form {
 	margin: 1rem;
 	padding: 15px 32px;
 	text-align: center;
-	margin-bottom: 3rem;
 	cursor: pointer;
 	text-decoration: none;
 	display: inline-block;
@@ -403,11 +401,12 @@ section.form {
 }
 
 div.gallery-holder {
+	height: 80vh;
 	grid-area: gallery-holder;
 	padding: 3rem 5rem 3rem 5rem;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	background-color: #130D0A;
-	background-position: center;
+    background: linear-gradient( rgb(19, 13, 10), rgba(255, 255, 255, 0), rgba(19, 13, 10)), url(bg-image-2.jpg);	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -431,6 +430,7 @@ section.gallery img:hover {
 	filter: none;
 	transition: 1s ease-in-out;
 	transform: scale(1.02);
+	filter: none;
 }
 
 .wrapper-all {
@@ -452,12 +452,17 @@ hr.style13 {
 }
 
 @media only screen and (max-width: 768px) {
-	#hero {
+	#hero{
 		display: none;
-  }body{
+	}
+	body{
     background-color: #130D0A;
-
   }
+  p{
+	  font-size: 20px;
+	  text-align: justify;
+	  font-family: 'Teko', sans-serif;
+	  }
   #hero-mobile{
     height: 100vh;
   text-align: center;
@@ -468,16 +473,13 @@ hr.style13 {
   .landing-content{
     text-align: center;
   }
-  .about-us{
-    display: none;
-  }
+ 
   html {
 		max-width: 100%;
 		overflow-x: hidden;
 	}
   .wrapper-all{
     display: block;
-    font-size: 18px;
   }
   section.slogan{
     font-size: 32px;
@@ -490,15 +492,20 @@ hr.style13 {
     margin:0;
     box-shadow: none;
   }
+  .aw-image{
+	  width: 80%;
+  }
   section.about-us{
-    display: none;
+	display: inline-block;
+	padding: 3rem;
   }
   .about-us-left{
     display: none;
   }
   .about-us-right {
-    text-align: center!important;
-    padding: 1rem;
+	text-align: center!important;
+	float: none;
+	padding: 0;
   }
   .news{
     padding:0;
