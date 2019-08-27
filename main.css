@@ -2,9 +2,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Teko', sans-serif;
+  
   color: #fff;
   background-image: none;
   z-index:3;
+}
+html{
+  scroll-behavior: smooth;
 }
 #hero {
   overflow: hidden;
@@ -91,7 +95,6 @@ h1{
 .news{
   grid-area: news;
   display: grid;
-  border-top: 3px solid white;
   background: linear-gradient( rgba(46, 46, 46, 0.5), rgba(19, 13, 10, 1)), url(bg-image-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,10 +169,8 @@ hr{
 .awards{
   grid-area: awards;
   padding: 5rem;
-    color: white;
     background-color: #130D0A;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg-image-2.jpg);
-    background-attachment: fixed;
+    background: linear-gradient( rgb(19, 13, 10 ), rgba(255, 255, 255, 0),rgba(19, 13, 10)), url(bg-image-2.jpg);
      background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -283,12 +284,11 @@ section.slogan{
 }
 section.about-us{
   grid-area:about-us;
-  border-bottom: 3px solid white;
   box-sizing: border-box;
   display: grid;
   grid-gap: 3rem;
   grid-template-columns: 1fr 1fr;
-  background: linear-gradient( rgb(19, 13, 10), rgba(255, 255, 255, 0)), url(bg-image-2.jpg);
+  background: linear-gradient( rgb(19, 13, 10), rgba(255, 255, 255, 0),rgba(19, 13, 10)), url(bg-image-2.jpg);
   background-position: center;  
   background-size: cover;
 }
