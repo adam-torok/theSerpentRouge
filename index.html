@@ -12,6 +12,8 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/75ad4010ea.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css">
@@ -37,7 +39,7 @@
   <div id='hero'>
     <div class='layer-bg layer' data-depth='0.10' data-type='parallax'>
       <div class="landing-content">
-        <h1>THE SERPENT ROUGE</h1>
+        <h1 class="animated fadeIn ">THE SERPENT ROUGE</h1>
         <h2> <i style="padding:0;">"A sandbox game set in the Middle Ages"</i> </h2>
         <i class="fab fa-steam  fa-3x"></i>
         
@@ -51,7 +53,7 @@
   </div>
   <div id='hero-mobile'>
     <div  class="landing-content">
-        <h1>THE SERPENT ROUGE</h1>
+        <h1 class="animated fadeIn infinite">THE SERPENT ROUGE</h1>
         <h2> <i style="padding:0;">"A sandbox game set in the Middle Ages"</i> </h2> 
         <i class="fab fa-steam  fa-3x"></i>
 
@@ -61,7 +63,7 @@
 
   <div class="wrapper-all">
       <section class='slogan'>
-          <h1 data-aos-delay="10" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine">"AS VISUALLY
+          <h1 class="animated fadeUp"data-aos-delay="10" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine">"AS VISUALLY
               <mark> STRIKING</mark> <br>
               AS ITS <mark>UNIQUE</mark> PREMISE."</h1> 
           <div class="slogan-text">
@@ -72,7 +74,7 @@
                 <img class="about-us-img aos-init aos-animate" data-aos="fade-right" src="plauge.png" alt="">
             </div>
             <div class="about-us-right">
-                <h1 data-aos="flip-down" class=" aos-animate">Lorem ipsum dolor sit amet.</h1>
+                <h1 data-aos="flip-down" class=" aos-animate">Lorem ipsum dolor.</h1>
                 <p data-aos="fade-left" class="aos-init aos-animate"> <i style="padding:0;"> Lorem ipsum dolor sit amet consectetur adipisicing elit?</i></p>
                 <p data-aos="fade-right" class="aos-init aos-animate">Placeat,
                     <mark> Lorem ipsum, dolor sit amet consectetur </mark> eveniet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam minima error esse labore ullam. Laboriosam quam repellat asperiores quisquam, alias illum consectetur aspernatur modi facere sequi ipsam, dolorem a molestias, quaerat perferendis?
@@ -254,19 +256,21 @@
   
   
     <section class="footer">
-      <h1>"AS VISUALLY STRIKING AS <mark>GOOD </mark>"</h1>
-      <img class="logo" src="unity-logo.png" alt="">
-      
-      <h2>FOLLOW US ON SOCIAL!</h2>
-      <div class="social-container">
-          <i class="fab fa-facebook  fa-3x"></i>
-          <i class="fab fa-twitter  fa-3x"></i>
-          <i class="fab fa-discord fa-3x"></i>
-          <i class="fab fa-reddit fa-3x"></i>
+      <div class="aligner">
+          <h1>"AS VISUALLY STRIKING AS <mark>GOOD </mark>"</h1>
+          <img class="logo" src="unity-logo.png" alt="">
+          
+          <h2>FOLLOW US ON SOCIAL!</h2>
+          <div class="social-container">
+              <i class="fab fa-facebook  fa-3x"></i>
+              <i class="fab fa-twitter  fa-3x"></i>
+              <i class="fab fa-discord fa-3x"></i>
+              <i class="fab fa-reddit fa-3x"></i>
+          </div>
+          <blockquote style="text-align: center">© 2019 XXX , The Serpant Rouge is a game developed by XXX , published by XXX The
+            Serpent Rouge a registered trademark of XXX All rights reserved.
+          </blockquote>
       </div>
-      <p style="text-align: center">© 2019 XXX , The Serpant Rouge is a game developed by XXX , published by XXX The
-        Serpent Rouge a registered trademark of XXX All rights reserved.
-      </p>
     </section>
 
    
@@ -278,7 +282,9 @@
   <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
 
   <script>
-    AOS.init();
+    AOS.init({
+  startEvent: 'load',
+});
 
     window.addEventListener('DOMContentLoaded', function () {
       new SmartPhoto(".js-smartPhoto");
