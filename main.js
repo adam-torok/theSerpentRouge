@@ -1,3 +1,8 @@
+
+	$(window).load(function() {
+		$(".se-pre-con").fadeOut("slow");;
+	});
+
 window.addEventListener('scroll', function(event) {
     const topDistance = this.pageYOffset; 
     const layers = document.querySelectorAll("[data-type='parallax']");
@@ -15,4 +20,5 @@ window.addEventListener('scroll', function(event) {
   });
 
 
+  
   

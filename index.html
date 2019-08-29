@@ -17,12 +17,17 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css">
-
+  <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
   <script src="main.js"></script>
   <title>The Serpent Rouge</title>
 </head>
 
 <body>
+
+    <div class="se-pre-con"></div>
+
 
   <header class="nav-down" id="header">
     <nav>
@@ -42,7 +47,6 @@
         <h1 class="animated fadeIn ">THE SERPENT ROUGE</h1>
         <h2> <i style="padding:0;">"A sandbox game set in the Middle Ages"</i> </h2>
         <i class="fab fa-steam  fa-3x"></i>
-        
       </div>
     </div>
     <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
@@ -83,7 +87,7 @@
             <div data-aos="fade-in" class="aw-cards">
               <img class="aw-image" src="circle-img.png" alt="">
               <h1>LOREM IPSIM DOLOR</h1>
-              <p>Do you see any <mark>Teletubbies</mark> in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? </p>
+              <p>Do you see any<mark>Teletubbies</mark> in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? </p>
       
             </div>
             <div data-aos="fade-in" class="aw-cards">
@@ -266,9 +270,11 @@
   </div>
 
   
-  <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
+  
 
   <script>
+
+    
     AOS.init({
   startEvent: 'load',
 });
