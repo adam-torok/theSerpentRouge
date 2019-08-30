@@ -21,6 +21,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
   <script src="main.js"></script>
+  <script src="sparks.js"></script>
   <title>The Serpent Rouge</title>
 </head>
 
@@ -30,7 +31,7 @@
 
 
   <header class="nav-down" id="header">
-    <nav>
+    <nav class="fill">
       <ul>
         <li><a href="#">HOME</a></li>
         <li><a href="#news">NEWS</a></li>
@@ -66,14 +67,14 @@
      </div>
 
   <div class="wrapper-all">
-      <section class='slogan'>
+      <section class='slogan' >
           <h1 class="animated fadeUp"data-aos-delay="10" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine">"AS VISUALLY
               <mark> STRIKING</mark> <br>
               AS ITS <mark>UNIQUE</mark> PREMISE."</h1> 
           <div class="slogan-text">
             
         </section>
-        <section class="about-us">
+        <section  id="firefly" class="about-us">
             <div class="about-us-left">
                 <img class="about-us-img aos-init aos-animate" data-aos="fade-right" src="image-1.png" alt="">
             </div>
@@ -182,7 +183,7 @@
 
             <h2>ABSOLUTE UNIT</h2>
 
-            <p>Very dangerous boss what can turn you into fany marbles.</p>
+            <p>Very dangerous boss what can turn you into fany marbles dangerous boss what can turn you into fany marbles dangerous boss what can turn you into fany marbles.</p>
             <button class="button collapse">READ MORE</button>
 
             <div class="article-dropdown-content">
@@ -274,6 +275,14 @@
 
   <script>
 
+$.firefly({
+  color: '#fff',
+  minPixel: 1,
+  maxPixel: 3,
+  total : 65,
+  on: '#firefly',
+  borderRadius: 50
+});
     
     AOS.init({
   startEvent: 'load',
