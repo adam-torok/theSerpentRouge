@@ -1,6 +1,8 @@
 
 	$(window).load(function() {
+		
 		$(".se-pre-con").fadeOut("slow");;
+		
 	});
 
 window.addEventListener('scroll', function(event) {
@@ -28,8 +30,8 @@ window.addEventListener('scroll', function(event) {
 	 */
 	var defaults = {
 			images : [,
-			'sparks.png'],
-			total : 500,
+			'images/sparks.png'],
+			total : 100,
 			ofTop: 0,
 			ofLeft: 0,
 			on:'document.body',
@@ -130,9 +132,9 @@ $.firefly.opacity = function(min)
 $(document).ready(function() {
    $.firefly({
      images : [
-        "sparks.png"
+        "images/sparks.png"
      ], //You can change images
-     total : 500, // You can edit the number of flies
+     total : 100, // You can edit the number of flies
      on: '#firefly' // id of div
   });
 });
