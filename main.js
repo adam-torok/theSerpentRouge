@@ -28,12 +28,12 @@ window.addEventListener('scroll', function(event) {
 	 */
 	var defaults = {
 			images : [,
-			'http://dharmmotyar.googlecode.com/svn/trunk/images/spark4.png'],
-			total : 150,
+			'sparks.png'],
+			total : 500,
 			ofTop: 0,
 			ofLeft: 0,
 			on:'document.body',
-			twinkle: 2
+			twinkle: 0.5
 	};
 	$.firefly = function(settings) {
 
@@ -130,10 +130,9 @@ $.firefly.opacity = function(min)
 $(document).ready(function() {
    $.firefly({
      images : [
-        'http://i60.tinypic.com/28878yv.png',
-        
+        "sparks.png"
      ], //You can change images
-     total : 200, // You can edit the number of flies
+     total : 500, // You can edit the number of flies
      on: '#firefly' // id of div
   });
 });
