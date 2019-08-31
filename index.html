@@ -24,7 +24,8 @@
 </head>
 
 <body>
-    <div class="se-pre-con"></div>
+  <!--LOADER-->
+   <!-- <div class="se-pre-con"></div> --> 
   <header class="nav-down" id="header">
     <nav class="fill">
       <ul>
@@ -220,18 +221,21 @@
   
         </div>
   
-        <form method="post" enctype="text/plain">
-          <br>
-          <h1 style="  text-align: left;">SEND AN <mark>EMAIL</mark>!</h1>
-          Name:<br>
-          <input type="text" placeholder="Your Name" name="name"><br>
-          E-mail:<br>
-          <input type="text" placeholder="Your Email" name="mail"><br>
-          Comment:<br>
-          <input type="text" id="comment-input" placeholder="Your comment" name="comment" size="50"><br><br>
-          <input style="width: 20%" class="button" type="submit" value="Send">
-  
-        </form>
+        <div class="form-container">
+            <form method="post" enctype="text/plain">
+              <br>
+              <h1 style="  text-align: left;">SEND AN <mark>EMAIL</mark>!</h1>
+              Name:<br>
+              <input type="text" placeholder="Your Name" name="name"><br>
+              E-mail:<br>
+              <input type="text" placeholder="Your Email" name="mail"><br>
+              Comment:<br>
+              <input type="text" id="comment-input" placeholder="Your comment" name="comment" size="50"><br><br>
+              <input style="width: 20%" class="button" type="submit" value="Send">
+      
+            </form>
+        </div>
+       
       </section>
       
   
@@ -265,7 +269,7 @@
 
   <script>
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+/* if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
   console.log("fireflies go sleep");
   $.firefly({
   color: '#fff',
@@ -282,6 +286,8 @@ $.firefly({
   on: '#firefly',
   borderRadius: 50
 });
+*/
+
     
     AOS.init({
   startEvent: 'load',
